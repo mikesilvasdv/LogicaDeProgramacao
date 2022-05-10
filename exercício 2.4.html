@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+alert("Bem-vindo(a) ao nosso sorteio! Sigas as intruções a seguir por favor. ");
+
+// pedir para jogador1 digitar um número
+
+let jogador1 = parseInt(prompt("Por favor, digite um número: "));
+
+// pedir para jogador2 digitar um número
+
+let = jogador2 = parseInt(prompt("Por favor, digite um número: "));
+
+// se forem iguais, mostrar mensagem "empate"
+
+if (jogador1 === jogador2){
+
+    alert("Empate! Jogador1 e Jogador2, digitaram o mesmo número!");
+
+} else {
+
+// sortear um número entre 0 e 1
+    let nSorteado = parseInt(Math.random() * 2);
+    alert("O número sorteado foi: " + nSorteado);
+
+// se o número sorteado for 0 , ganha quem escolheu o menor número
+
+if(nSorteado === 0){
+
+    if(jogador1 < jogador2){
+        alert("Jogador 1 venceu! Parabéns!");
+    } else {
+        alert("Jogador 2 venceu! Parabéns!");
+    }
+
+// se o número sorteado for 1, ganha quem escolheu o maior número 
+} else { 
+    if(jogador1 > jogador2){
+        alert("Jogador 1 venceu! Parabéns!");
+    } else {
+        alert("Jogador 2 venceu! Parabéns!");
+    }
+    
+}
+
+}
+
+
+    </script>
+
+</body>
+
+</html>

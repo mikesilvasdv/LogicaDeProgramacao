@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+    //Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não.
+
+    let n1 = parseInt(prompt("Por favor, digite a sua primeiro nota: "));
+
+    let n2 = parseInt(prompt("Por favor, digite a sua segunda nota: "));
+
+    let media = (n1 + n2) / 2;
+
+    //A nota de corte é 5
+    //Se qualquer uma das notas for 0, será reprovado automáticamente
+
+    if (n1 === 0 || n2 === 0 || media < 5){
+        alert("Sinto muito, você foi reprovado. :( ");
+
+    } else {
+        alert("Parabéns você foi aprovado! ");
+    }
+    
+
+    </script>
+
+</body>
+
+</html>
