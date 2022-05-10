@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 class="títulos">Lógica de programação!</h1>
+    
+    <div class="tabuada">
+
+        <script >
+
+        //Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 1000. 
+
+        let numero = parseFloat(prompt("Digite um número: "));
+
+        let indice = 1;
+
+        //repita até que índice seja <=1000
+
+        while(indice <= 1000){
+            document.write(numero + " x " + indice + " = " + (numero * indice) + "<br>");
+
+            
+        //insira uma linha divisória sempre que mudar a dezena. 
+        
+            if(indice % 10 === 0 && indice > 0){
+                document.write(" <hr> ");
+            } 
+
+            indice++
+
+        } 
+        
+        document.write("Saiu do loop");
+        
+
+        
+        </script>
+    </div>
+
+</body>
+
+</html>
