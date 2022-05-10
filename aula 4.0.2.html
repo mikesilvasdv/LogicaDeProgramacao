@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<!-- Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 1000. Deve ter a possibilidade do usuário digitar outro número e também de limpar a tabuada
+gerada previamente -->
+
+
+<body>
+
+    <button onclick="mostrarTabuada()">Criar tabuada</button>
+    <button onclick="limparTabuada()">Limpar tabuada</button>
+    <div id="output">
+        <script>
+
+       function mostrarTabuada(){
+           //perguntar o número para o usuário
+           //converter o número
+
+           let n = parseFloat(prompt("Digite um número: "));
+
+           limparTabuada();
+
+           //criar variável quer servirá de índice
+
+           let indice = 1;
+
+           //enquanto índice <=1000, concatenar na varíavel mensagem
+
+           while(indice <= 1000){
+               mensagem += n + " x " + indice + " = " + (n * indice) + "<br>";
+               indice++;
+           }
+
+           output.innerHTML = mensagem;
+
+           //mostrar mensagem no output
+       }
+
+       function limparTabuada(){
+           mensagem = "";
+           output.innerHTML = mensagem;
+       }
+        let output = document.querySelector("#output");
+
+        let mensagem = "";
+        
+
+       </script>
+    </div>
+
+</body>
+
+</html>

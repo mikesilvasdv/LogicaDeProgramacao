@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+
+
+
+<body style="background-color:bisque; text-align: center;">
+
+        <h1 style="font-size: 2.9em;">Mini calculadora!</h1> <hr style="border-style: double;">
+
+        <button style="font-size: 2.9em; border-radius: 1.5em;" onclick="soma()"> + </button>
+        <button style="font-size: 2.9em; border-radius: 1.5em;" onclick="subtracao()"> - </button> 
+        <button style="font-size: 2.9em; border-radius: 1.5em;" onclick="multiplicacao()"> * </button> 
+        <button style="font-size: 2.9em; border-radius: 1.5em;" onclick="divisao()"> / </button>
+        
+        
+        
+        <div id="output" style="font-size: 2.1em;">
+
+            <script>
+
+                alert("Bem vindo(a)!");
+
+                let n1 = parseFloat(prompt("Digite um número!"));
+
+                let resultado = n1;
+
+                let output = document.querySelector("#output");
+
+                output.innerHTML = n1;
+
+                function soma(){
+                    let n2 = parseFloat(prompt("Digite um número!"));
+                    resultado = resultado + n2;
+                    output.innerHTML = resultado;
+                    
+                    
+                } 
+                function subtracao(){
+                    let n2 = parseFloat(prompt("Digite um número!"));
+                    resultado = resultado - n2;
+                    output.innerHTML = resultado;
+                    
+                    
+                } 
+                function multiplicacao(){
+                    let n2 = parseFloat(prompt("Digite um número!"));
+                    resultado = resultado * n2;
+                    output.innerHTML = resultado;
+                    
+                    
+                } 
+                function divisao(){
+                    let n2 = parseFloat(prompt("Digite um número!"));
+                    resultado = resultado / n2;
+                    output.innerHTML = resultado;
+                    
+                    
+                } 
+                
+                
+
+
+
+            </script>
+
+
+
+
+        </div>
+
+</body>
+
+</html>
